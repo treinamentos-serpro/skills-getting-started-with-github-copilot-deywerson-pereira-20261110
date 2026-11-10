@@ -63,6 +63,7 @@ section h3 {
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
@@ -72,6 +73,64 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 1px solid #dfe3fb;
+  border-radius: 8px;
+  background-color: #f1f3ff;
+}
+
+.participants h5 {
+  margin-bottom: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+}
+
+.participant-list {
+  padding-left: 0;
+  list-style: none;
+  color: #3f4665;
+}
+
+.participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 3px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #c62828;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.participant-remove:hover {
+  background-color: #ffebee;
+}
+
+.participant-remove:focus-visible {
+  outline: 2px solid #c62828;
+  outline-offset: 2px;
+}
+
+.participant-remove:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.participants-empty {
+  margin-bottom: 0;
+  color: #666;
+  font-style: italic;
 }
 
 .form-group {
